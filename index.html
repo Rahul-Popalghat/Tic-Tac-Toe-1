@@ -109,6 +109,7 @@ var count =0;
 var count1 = 0;
 var turn = '';
 
+/*
 function checkPreviousPlayer(){
 if(Player1.value != savedPlayer1){
     Player1.value = savedPlayer1;
@@ -117,15 +118,15 @@ if(Player2.value != savedPlayer2){
     Player2.value = savedPlayer2;
 }
 }
-
+*/
 function setname(){
 
 if(!savedPlayer1){
     Player1.value = 'Player 1';
-}
+}else{Player1.value = savedPlayer1;}
 if(!savedPlayer2){
     Player2.value = 'Player 2';
-}
+}else{Player2.value = savedPlayer2;}
 }
 
 
