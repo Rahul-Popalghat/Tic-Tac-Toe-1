@@ -118,6 +118,17 @@ if(Player2.value != savedPlayer2){
 }
 }
 
+function setname(){
+
+if(!savedPlayer1){
+    Player1.value = 'Player 1';
+}
+if(!savedPlayer2){
+    Player2.value = 'Player 2';
+}
+}
+
+
 playAgainBtn.addEventListener('click', resetgame);
 
 startBtn.addEventListener('click' , startgame);
@@ -287,7 +298,7 @@ for(let i = 0; i < grid.length; i++){
 }
 }
 
-document.onload = checkPreviousPlayer();
+document.onload = setname();
 </script>
 
 </body>
